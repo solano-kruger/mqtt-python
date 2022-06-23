@@ -1,0 +1,28 @@
+Colocar as pastas docker-mqtt e python-mqtt em um mesmo diretório
+
+Criação do container:
+    - cd docker-mqtt
+    - sudo docker build -t mosquitto -f Dockerfile .
+    - sudo apt remove mosquitto
+    - sudo docker run -it -p 1883:1883 -p 9001:9001 mosquitto /bin/bash
+    - mosquitto &
+    - mosquitto_sub -h localhost -v -t '#'
+
+Conectando o publisher:
+    - cd python-mqtt
+    - sudo apt install python3-pip
+    - sudo pip install --upgrade setuptools
+    - pip install --upgrade pip 
+    - pip install paho-mqtt
+	- pip install requests
+
+    - python3 Publisher.py 	
+
+Conectando o Subscriber:
+	- python3 Subscriber.py
+
+O subscriber vai ler o sensor1 e enviar o json direto para o firebase
+
+Aplicação para consultar os dados:
+	- cd python-mqtt
+	- python3 recover.py
