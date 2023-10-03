@@ -1,0 +1,21 @@
+aula 8
+interpolação só tem semtido no interir dos dados
+
+interpolação passa exatamente enre 2 ponto
+
+interpolação mede eos dados dentros dos pontos
+
+numca escolher um polinomio, por ela a curva se ajusta.
+
+Regra: passar sobre todos os pontos.
+
+ajuste de interpolaçao: é algopratico
+
+ajuste de curvas:voce quer fazer extrrapolação, é o domino do usuario de devine
+
+interpolação limita a ficar presa aos pontos, é melhor para casos rapidos e pequeno.
+
+extrapolação é realirado pra casos mais elaborados e extimatvas de pontos.
+
+
+Grau do ploninomio é sempre 1 numero a menos ao numero de pontos.
